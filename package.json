@@ -41,7 +41,7 @@
     "@svgr/webpack": "^6.5.1",
     "@testing-library/react": "^13.4.0",
     "@types/file-saver": "^2.0.5",
-    "babel-loader": "^8.2.5",
+    "babel-loader": "^9.1.2",
     "concurrently": "^7.4.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
