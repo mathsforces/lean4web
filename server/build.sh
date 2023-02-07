@@ -5,6 +5,9 @@ SECONDS=0
 # Operate in the directory where this file is located
 cd $(dirname $0)
 
+# Install lean
+curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh
+
 (cd LeanProject &&
   rm -f ./lake-manifest.json &&
   lake update && # download latest mathlib
