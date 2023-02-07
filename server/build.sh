@@ -8,7 +8,7 @@ cd $(dirname $0)
 # Install lean
 wget https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh
 chmod +x elan-init.sh
-./elan-init.sh -y
+./elan-init.sh -y --default-toolchain leanprover/lean4:nightly
 
 
 (cd LeanProject &&
