@@ -6,7 +6,10 @@ SECONDS=0
 cd $(dirname $0)
 
 # Install lean
-curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -y
+wget https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh
+chmod +x elan-init.sh
+./elan-init.sh -y
+
 
 (cd LeanProject &&
   rm -f ./lake-manifest.json &&
