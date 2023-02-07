@@ -9,7 +9,8 @@ cd $(dirname $0)
 wget https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh
 chmod +x elan-init.sh
 ./elan-init.sh -y --default-toolchain leanprover/lean4:nightly
-
+source ~/.profile
+lake --version
 
 (cd LeanProject &&
   rm -f ./lake-manifest.json &&
